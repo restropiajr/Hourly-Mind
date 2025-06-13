@@ -1,49 +1,39 @@
-import { FC } from 'react'
-import NextLink from 'next/link'
-import { Grid, Container, Box, Button } from '@mui/material'
+'use client'
+import { FC, useEffect, useState } from 'react'
+import Link from 'next/link'
+import { cm } from '@/utils'
 
 type HeaderProps = {
   //
 }
 
 export const Header: FC<HeaderProps> = () => {
+  const [navBG, setNavBG] = useState<string>('bg-transparent')
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setNavBG(window.scrollY >= 50 ? 'bg-[#f6e7cb]/60' : 'bg-transparent')
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
-    <Box sx={{ bgcolor: '#f6e7cb', p: 4 }}>
-      <Container>
-        <Grid container>
-          <Grid size={12}>
-            <Box
-              sx={{
-                display: 'flex',
-                flexDirection: 'row',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: 2,
-              }}
-            >
-              <Button component={NextLink} variant="contained" href="/" color="primary">
-                Home
-              </Button>
-              <Button
-                component={NextLink}
-                variant="contained"
-                href="/payroll-calculator"
-                color="primary"
-              >
-                Payroll Calculator
-              </Button>
-              <Button
-                component={NextLink}
-                variant="contained"
-                href="/client-calculator"
-                color="primary"
-              >
-                Client Calculator
-              </Button>
-            </Box>
-          </Grid>
-        </Grid>
-      </Container>
-    </Box>
+    <nav
+      className={cm(
+        'fixed top-0 left-0 z-10 flex h-[80px] w-full items-center justify-center transition duration-500 ease-in-out',
+        navBG
+      )}
+    >
+      <div className="flex w-2/3 items-center justify-between gap-4">
+        <Link href="/">Home</Link>
+        <div className="flex items-center justify-center gap-4">
+          <Link href="/client-calculator">Client Calculator</Link>
+          <Link href="/payroll-calculator">Payroll Calculator</Link>
+        </div>
+      </div>
+    </nav>
   )
 }

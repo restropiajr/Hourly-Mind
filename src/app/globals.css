@@ -1,7 +1,20 @@
 @import 'tailwindcss';
 
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f6e7cb;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-green-300);
+}
+
 @layer base {
   body {
     font-family: var(--font-montserrat);
+    @apply min-h-screen w-full bg-green-100 text-black antialiased;
   }
 }
