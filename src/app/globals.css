@@ -5,17 +5,17 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #0a141e;
+  background-color: #ffbfa3;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #ff4654;
+  background-color: #3fd6c2;
 }
 
 @layer base {
   body {
     font-family: var(--font-montserrat), sans-serif;
-    @apply min-h-screen w-full bg-gradient-to-t from-[#ff4654] to-[#0a141e] text-white antialiased;
+    @apply min-h-screen w-full bg-gradient-to-t from-[#3FD6C2] to-[#FFBFA3] text-[#0F2F2E] antialiased;
   }
   h1 {
     font-weight: 700;
@@ -45,6 +45,6 @@
 
 @layer utilities {
   .hover-transition {
-    @apply rounded p-1 transition duration-500 ease-in-out hover:bg-white hover:text-black;
+    @apply rounded p-1 transition duration-500 ease-in-out hover:bg-white;
   }
 }
