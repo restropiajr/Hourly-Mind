@@ -19,15 +19,27 @@
   }
   h1 {
     font-weight: 700;
+    @apply text-4xl leading-tight tracking-tight md:text-6xl;
   }
 
   h2 {
     font-weight: 600;
+    @apply text-3xl leading-snug tracking-tight md:text-5xl;
   }
 
-  p,
-  button {
+  h3 {
+    font-weight: 500;
+    @apply text-2xl leading-snug tracking-normal md:text-4xl;
+  }
+
+  h4 {
+    font-weight: 500;
+    @apply text-xl leading-normal md:text-2xl;
+  }
+
+  p {
     font-weight: 400;
+    @apply text-base leading-relaxed tracking-normal md:text-lg;
   }
 }
 
