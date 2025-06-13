@@ -13,6 +13,19 @@
 }
 
 @layer base {
+  h1 {
+    font-weight: 700;
+  }
+
+  h2 {
+    font-weight: 600;
+  }
+
+  p,
+  button {
+    font-weight: 400;
+  }
+
   body {
     font-family: var(--font-montserrat);
     @apply min-h-screen w-full bg-gradient-to-t from-[#ff4654] to-[#0a141e] text-white antialiased;
