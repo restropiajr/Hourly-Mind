@@ -13,6 +13,10 @@
 }
 
 @layer base {
+  body {
+    font-family: var(--font-montserrat);
+    @apply min-h-screen w-full bg-gradient-to-t from-[#ff4654] to-[#0a141e] text-white antialiased;
+  }
   h1 {
     font-weight: 700;
   }
@@ -25,9 +29,10 @@
   button {
     font-weight: 400;
   }
+}
 
-  body {
-    font-family: var(--font-montserrat);
-    @apply min-h-screen w-full bg-gradient-to-t from-[#ff4654] to-[#0a141e] text-white antialiased;
+@layer utilities {
+  .hover-transition {
+    @apply rounded p-1 transition duration-500 ease-in-out hover:bg-white hover:text-black;
   }
 }
