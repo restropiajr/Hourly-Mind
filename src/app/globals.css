@@ -43,6 +43,13 @@
   }
 }
 
+@layer components {
+  .link {
+    font-weight: 400;
+    @apply text-base leading-relaxed tracking-normal md:text-lg;
+  }
+}
+
 @layer utilities {
   .hover-transition {
     @apply rounded p-1 transition duration-500 ease-in-out hover:bg-white;

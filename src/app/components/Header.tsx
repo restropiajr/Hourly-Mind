@@ -32,14 +32,14 @@ export const Header: FC<HeaderProps> = () => {
       )}
     >
       <div className="flex w-2/3 items-center justify-between gap-4">
-        <Link href="/" className="hover-transition">
+        <Link href="/" className="hover-transition link">
           Home
         </Link>
         <div className="flex items-center justify-center gap-4">
-          <Link href="/client-calculator" className="hover-transition">
+          <Link href="/client-calculator" className="hover-transition link">
             Client Calculator
           </Link>
-          <Link href="/payroll-calculator" className="hover-transition">
+          <Link href="/payroll-calculator" className="hover-transition link">
             Payroll Calculator
           </Link>
         </div>
