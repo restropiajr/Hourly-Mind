@@ -12,7 +12,7 @@ export const Header: FC<HeaderProps> = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setNavBG(window.scrollY >= 50 ? 'bg-[#f6e7cb]/60' : 'bg-transparent')
+      setNavBG(window.scrollY >= 50 ? 'bg-black/60' : 'bg-transparent')
     }
     window.addEventListener('scroll', handleScroll)
     return () => {

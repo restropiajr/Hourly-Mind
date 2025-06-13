@@ -5,16 +5,16 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #f6e7cb;
+  background-color: #0a141e;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--color-green-300);
+  background-color: #ff4654;
 }
 
 @layer base {
   body {
     font-family: var(--font-montserrat);
-    @apply min-h-screen w-full bg-green-100 text-black antialiased;
+    @apply min-h-screen w-full bg-gradient-to-t from-[#ff4654] to-[#0a141e] text-white antialiased;
   }
 }
