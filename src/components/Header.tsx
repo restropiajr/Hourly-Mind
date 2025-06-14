@@ -3,14 +3,12 @@
 import { FC, useEffect, useState } from 'react'
 import Link from 'next/link'
 import { cm } from '@/utils'
-import { useBreakpoint } from '@/hooks'
 
 type HeaderProps = {
   //
 }
 
 export const Header: FC<HeaderProps> = () => {
-  const { isMobile } = useBreakpoint()
   const [navBG, setNavBG] = useState<string>('bg-transparent')
 
   useEffect(() => {
@@ -27,8 +25,6 @@ export const Header: FC<HeaderProps> = () => {
     }
   }, [])
 
-  console.log('isMobile', isMobile)
-
   return (
     <nav
       className={cm(
@@ -36,15 +32,15 @@ export const Header: FC<HeaderProps> = () => {
         navBG
       )}
     >
-      <div className="flex w-2/3 items-center justify-between gap-4">
+      <div className="flex w-3/4 items-center justify-between gap-4">
         <Link href="/" className="hover-transition link">
           Home
         </Link>
         <div className="flex items-center justify-center gap-4">
-          <Link href="/client-calculator" className="hover-transition link">
+          <Link href="/client-calculator" className="hover-transition link text-center">
             Client Calculator
           </Link>
-          <Link href="/payroll-calculator" className="hover-transition link">
+          <Link href="/payroll-calculator" className="hover-transition link text-center">
             Payroll Calculator
           </Link>
         </div>
