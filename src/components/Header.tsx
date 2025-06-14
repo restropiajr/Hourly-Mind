@@ -1,13 +1,16 @@
 'use client'
+
 import { FC, useEffect, useState } from 'react'
 import Link from 'next/link'
 import { cm } from '@/utils'
+import { useBreakpoint } from '@/hooks'
 
 type HeaderProps = {
   //
 }
 
 export const Header: FC<HeaderProps> = () => {
+  const { isMobile } = useBreakpoint()
   const [navBG, setNavBG] = useState<string>('bg-transparent')
 
   useEffect(() => {
@@ -23,6 +26,8 @@ export const Header: FC<HeaderProps> = () => {
       window.removeEventListener('scroll', handleScroll)
     }
   }, [])
+
+  console.log('isMobile', isMobile)
 
   return (
     <nav

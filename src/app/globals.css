@@ -52,6 +52,6 @@
 
 @layer utilities {
   .hover-transition {
-    @apply rounded p-1 transition duration-500 ease-in-out hover:bg-white;
+    @apply rounded p-1 transition duration-500 ease-in-out hover:bg-[#3FD6C2]/30;
   }
 }
