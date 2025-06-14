@@ -1446,6 +1446,7 @@ __metadata:
     eslint-config-prettier: ^10.1.5
     husky: ^9.1.7
     lint-staged: ^16.1.0
+    lucide-react: ^0.515.0
     next: 15.3.3
     prettier: ^3.5.3
     prettier-plugin-tailwindcss: ^0.6.12
@@ -3080,6 +3081,15 @@ __metadata:
   bin:
     loose-envify: cli.js
   checksum: 6517e24e0cad87ec9888f500c5b5947032cdfe6ef65e1c1936a0c48a524b81e65542c9c3edc91c97d5bddc806ee2a985dbc79be89215d613b1de5db6d1cfe6f4
+  languageName: node
+  linkType: hard
+
+"lucide-react@npm:^0.515.0":
+  version: 0.515.0
+  resolution: "lucide-react@npm:0.515.0"
+  peerDependencies:
+    react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
+  checksum: 863c53d0564eaceb2a0109a9649ab5a44c67bb1a82311afb3abbdd9bb5114c09ee31df1b7931b14ac8e76a2930e7e7d045bc3f12cd72c83337f26c4aa8465563
   languageName: node
   linkType: hard
 
