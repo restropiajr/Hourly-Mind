@@ -1,7 +1,7 @@
 export default function ClientCalculator() {
   return (
-    <div>
-      <h1>Welcome to Client Calculator</h1>
+    <div className="flex min-h-screen flex-col items-center justify-center">
+      <h1>Client Calculator</h1>
     </div>
   )
 }

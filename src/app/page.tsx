@@ -15,8 +15,11 @@ export default function Home() {
       />
       <div className="flex flex-col items-center justify-center gap-4">
         <h1 className="text-center">Welcome to Therapay</h1>
-        <p className="text-center">
+        <h4 className="text-center">
           The easiest way for therapists to calculate payroll and manage client billing.
+        </h4>
+        <p className="text-center">
+          Select the Client Calculator or the Payroll Calculator to get started.
         </p>
       </div>
     </div>
