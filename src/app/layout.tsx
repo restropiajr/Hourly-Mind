@@ -10,8 +10,8 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: 'Hourly Mind',
-  description: 'Payroll calculator to help therapist estimate their salary.',
+  title: 'Therapay',
+  description: 'Payroll calculator to help therapists estimate earnings.',
 }
 
 export default function RootLayout({
