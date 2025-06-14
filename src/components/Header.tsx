@@ -37,7 +37,7 @@ export const Header: FC<HeaderProps> = () => {
           Home
         </Link>
         <div className="flex items-center justify-center gap-4">
-          <Link href="/client-calculator" className="hover-transition link text-center">
+          <Link href="/coming-soon" className="hover-transition link text-center">
             Client Calculator
           </Link>
           <Link href="/payroll-calculator" className="hover-transition link text-center">
