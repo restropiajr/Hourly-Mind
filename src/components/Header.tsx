@@ -40,7 +40,7 @@ export const Header: FC<HeaderProps> = () => {
           <Link href="/coming-soon" className="hover-transition link text-center">
             Client Calculator
           </Link>
-          <Link href="/payroll-calculator" className="hover-transition link text-center">
+          <Link href="/coming-soon" className="hover-transition link text-center">
             Payroll Calculator
           </Link>
         </div>
